@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forbes × Каминский — А что для вас роскошь?</title>
+  <link rel="preload" href="fonts/tenor-cyr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-cyr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap" id="app">
+
+    <!-- Заставка -->
+    <section class="screen screen--start is-active" id="screen-start">
+      <figure class="photo photo--start"><img src="img/building.jpg" alt="Деловой центр «Каминский»"></figure>
+      <div class="start__content">
+        <div class="cobrand" aria-label="Forbes × Каминский"><img class="cobrand__forbes" src="img/forbes.svg" alt="Forbes"><span class="cobrand__x" aria-hidden="true">×</span><img class="cobrand__kam" src="img/kaminskii-wordmark.svg" alt="Каминский"></div>
+        <div class="start__text">
+          <h1 class="start__title">А что для вас роскошь?</h1>
+          <p class="start__lead">Персональное внимание, приватность, продуманность деталей или свободное время?</p>
+          <p class="start__lead start__lead--sub">Ответьте на шесть вопросов и&nbsp;узнайте, что для вас важнее всего в&nbsp;сфере сервиса.</p>
+        </div>
+        <div class="start__actions">
+          <button class="btn" id="btn-start" type="button">Начать тест</button>
+        </div>
+      </div>
+      <div class="rays rays--start" aria-hidden="true"></div>
+    </section>
+
+    <!-- Вопросы -->
+    <section class="screen screen--quiz" id="screen-quiz">
+      <header class="head">
+        <img class="head__sign" src="img/sign.svg" alt="">
+        <span class="head__title">Выберите один вариант</span>
+        <span class="head__count"><span id="q-pos">1</span><span class="head__total"> / 6</span></span>
+        <div class="head__progress" id="progress"></div>
+      </header>
+      <div class="body">
+        <figure class="photo photo--side" id="quiz-photo"></figure>
+        <div class="quiz">
+          <div class="quiz__inner" id="quiz-inner">
+            <p class="eyebrow" id="q-label">Вопрос 1</p>
+            <h2 class="quiz__question" id="q-text"></h2>
+            <div class="quiz__options" id="q-options"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Результат -->
+    <section class="screen screen--result" id="screen-result">
+      <header class="head">
+        <img class="head__sign" src="img/sign.svg" alt="">
+        <span class="head__title">Ваш результат</span>
+        <button class="head__again" type="button" data-restart>Пройти еще раз</button>
+      </header>
+      <div class="body">
+        <figure class="photo photo--side"><img id="r-img" src="img/concierge.jpg" alt=""></figure>
+        <div class="result">
+          <p class="eyebrow" id="r-kicker"></p>
+          <h2 class="result__title" id="r-title"></h2>
+          <div class="result__scroll" id="r-scroll">
+            <div class="result__text" id="r-text"></div>
+          </div>
+          <div class="result__actions">
+            <a class="btn" href="#" target="_blank" rel="noopener" data-link="result">Узнать о проекте</a>
+            <button class="btn btn--ghost btn--arrow" id="btn-final" type="button">Далее <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Финальный экран -->
+    <section class="screen screen--final" id="screen-final">
+      <figure class="photo photo--start photo--final"><img src="img/final.jpg" alt="Деловой центр «Каминский»"></figure>
+      <div class="start__content">
+        <div class="cobrand" aria-label="Forbes × Каминский"><img class="cobrand__forbes" src="img/forbes.svg" alt="Forbes"><span class="cobrand__x" aria-hidden="true">×</span><img class="cobrand__kam" src="img/kaminskii-wordmark.svg" alt="Каминский"></div>
+        <div class="start__text">
+          <h2 class="start__title start__title--sm">А если бы все это было в&nbsp;одном месте?</h2>
+          <p class="start__lead">«Каминский» — камерный деловой центр в&nbsp;историческом здании на&nbsp;Большой Лубянке. Архитектура, приватность, современные офисы и&nbsp;сервис по&nbsp;принципу пятизвездочного отеля.</p>
+        </div>
+        <div class="start__actions start__actions--col">
+          <a class="btn" href="#" target="_blank" rel="noopener" data-link="final">Узнать больше о «Каминском»</a>
+          <button class="link-again" type="button" data-restart>Пройти еще раз</button>
+        </div>
+      </div>
+      <div class="rays rays--start" aria-hidden="true"></div>
+    </section>
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
