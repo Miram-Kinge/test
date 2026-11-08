@@ -500,9 +500,14 @@ h1, h2, p { margin: 0; }
   .option { font-size: 13px; padding: 10px 12px; }
 
   .screen--result .body { flex-direction: column; gap: 16px; }
-  .screen--result .photo--side { display: block; flex: 0 0 26%; height: auto; }
+  .screen--result .photo--side { display: block; flex: 1 1 auto; min-height: 96px; height: auto; }
+  .screen--result .result { flex: 0 1 auto; min-height: 0; }
+  .screen--result .result__scroll { flex: 0 1 auto; }
   .screen--quiz .body { flex-direction: column; gap: 0; }
-  .screen--quiz .photo--side { display: block; flex: 0 0 22%; height: auto; margin-bottom: 14px; }
+  .screen--quiz .photo--side { display: block; flex: 1 1 auto; min-height: 80px; height: auto; margin-bottom: 14px; }
+  .screen--quiz .quiz { flex: 0 0 auto; padding-top: 0; }
+  .quiz__options { gap: 6px; margin-top: 12px; }
+  .option { padding: 8px 12px; line-height: 1.35; }
   .result__title { font-size: 19px; }
   .result__actions { justify-content: space-between; }
   .result__actions .btn:first-child { flex: 1; padding: 0 12px; }
